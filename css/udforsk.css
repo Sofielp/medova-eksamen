@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Noticia Text', serif;
+}
+
+body{
+    background-color: #d0dfce;
+}
+
+/*Navbar*/
+
+header {
+    background-color: #f1f1f1;
+    height: 100px;
+    display: grid;
+    align-items: stretch;
+}
+
+.logo img {
+    height: 70px;
+    padding-top: 4px;
+}
+
+.navbar {
+    min-height: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 3rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hamburger {
+    display: block;
+    order: 2;
+}
+
+.nav-branding {
+    order: 1;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    border-radius: 20px;
+}
+
+
+
+.nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 100px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-item {
+    margin: 16px 0;
+}
+
+.nav-menu.active {
+    left: 0;
+    width: 100%;
+}
+
+/*Galleri*/
+
+.overskrift{
+    font-size: 24px;
+    padding-left: 3rem;
+    padding-top: 4rem;
+}
+
+
+.overskrift h3 span{
+color: #5a6843;
+font-weight: bold;
+}
+
+.teplukkerdamer img{
+    width:30%;
+    float: right;
+    padding-right: 4rem;
+}
+
+.galleri-tekst{
+    font-family: 'Noticia Text', serif;
+    padding-left: 3rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    font-size: 18px;
+}
+
+.galleri img{
+    width: 19%;
+    height: 100%;
+    object-fit: cover;
+    padding-left: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.galleri{
+    background-color: #afc3a7;
+}
+
+/*tekstfelt husk hvor teen kommer fra*/
+
+.husk h3{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2rem;
+    color: #8ea386;
+}
+/*tekstfelt*/
+
+/*bølge*/
+.boeglebund svg{
+    padding-top: 2rem;
+    margin-top: -4rem;
+    margin-bottom: -1rem;
+}
+/*bølge slut*/
+
+/*Footer*/
+
+/*Footer*/
+
+.footer {
+    padding: 40px 0;
+    background-color: #b3c0a7;
+}
+
+.footer .social {
+text-align: center;
+padding-bottom: 25px;
+color: #fff;
+}
+
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover{
+    opacity: 0.9;
+    color: #5a6842;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding:  0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul a{
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+display: inline-block;
+padding: 0 15px;
+}
+
+.footer ul li a:hover{
+    opacity: 1;
+    color: #5a6842;
+}
+
+/*footer slut*/ 
+
+/*responsive*/
+
+@media (max-width: 426px){
+    body{ 
+        width: 100%;
+    }
+
+    header{
+        background-color:#f1f1f1;
+        display: grid;
+        align-items: center;
+    }
+
+    .navbar{
+        gap: 7rem;
+    }
+
+    .nav-branding{
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar .logo img{
+        width: 320%;
+        margin-left: -4rem;
+    }
+
+/*navbar slut*/
+
+/*billede af teplukker*/
+    .teplukkerdamer img {
+        width: 70%;
+        justify-content: center;
+        margin-top: 2.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .galleri-tekst{
+    font-size: 15px;
+    padding-top: 10rem;
+    padding-right: 2rem;
+    line-height: 1.5rem;
+}
+
+/*galleri*/
+
+.galleri img{
+    width: 70%;
+    justify-content: center;
+    padding-right: 1rem; 
+}
+
+/*footer*/
+.footer ul a{
+font-size: 16px;
+}
+
+
+}
+
+@media (min-width:821px){
+    
+    body{
+        width: 100%;
+    }
+
+  .empty{
+    display: none;
+  }
+
+  .navbar{
+    display: flex
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+
+  .navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    order: 1;
+  }
+
+  header{
+    height: 100px;
+  }
+
+  .nav-branding img{
+    width: 100px;
+  }
+  
+  .nav-menu {
+    display:flex;
+    align-items: center;
+    gap: 40px;
+    left: 0%;
+    flex-direction: row;
+    position: static;
+    order: 2;
+    width: auto;
+    font-size: 16px;
+  }
+
+  .nav-link:hover {
+    background-color:#8ea386;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.navbar{
+    padding: 0 80px ;
+}
+}
+
+@media (min-width:1024px){
+
+    body{
+        width: 100%;
+    }
+
+    .navbar{
+        padding: 0 80px ;
+    }
+}
+
+
+
+/*footer*/ 
+
+@media (max-width: 991px) {
+    footer{
+        padding: 40px;
+    }
+/*her ændres det fra row til column, så den tilpasses mobil */
+    footer .container{
+        flex-direction: column;
+    }
+
+    footer .container .sec{
+        margin-right:0;
+        margin-bottom: 40px;
+    }
+}

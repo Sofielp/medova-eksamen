@@ -1,0 +1,541 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Noticia Text', serif;
+}
+
+/*baggrundfarve laves om?*/
+body {
+    background-color: #cddbe8;
+    }
+
+
+/*Navbar*/
+
+header {
+    background-color: #f1f1f1;
+    height: 100px;
+    display: grid;
+    align-items: stretch;
+}
+
+.logo img {
+    height: 70px;
+    padding-top: 4px;
+}
+
+.navbar {
+    min-height: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 3rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hamburger {
+    display: block;
+    order: 2;
+}
+
+.nav-branding {
+    order: 1;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 100px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-item {
+    margin: 16px 0;
+}
+
+.nav-menu.active {
+    left: 0;
+    width: 100%;
+}
+
+/*navbar slut*/
+
+
+/*første sektion*/
+
+.forside-tekst{
+    padding-left: 5rem;
+    padding-top: 5rem;
+    font-size: 35px;
+}
+
+.forside-tekst h1 span{
+    color: #6f7aa1;
+}
+
+
+.tedame img{
+    width: 30%;
+    float: right;
+    padding-right: 4rem;
+    margin-top: -8rem;
+}
+
+.boegle svg{
+    margin-top: -14.5rem;
+    margin-bottom: -2rem;
+}
+
+/*første sektion slut*/
+
+/*Ny identitet, samme smag*/
+
+
+
+.nyidentitet h2{
+    font-size: 30px;
+    color: #404d7a;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.knap a{
+    background-color: #486981;
+    color: whitesmoke;
+    margin-top: 1.5rem;
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+}
+
+.knap {
+    text-align: center;
+}
+
+.knap a:hover {
+    background-color: #3985c7;
+}
+
+/*Ny identitet, samme smag slut*/
+
+.boegleinfographic svg{
+    margin-top: -2rem;
+}
+
+/*Ny identitet, samme smag slut*/
+
+/*infographic*/
+
+.infographic-afsnit{
+    background-color: #e0ebf5;
+}
+
+.infographic-tekst h3{
+    text-align: center;
+    padding-top: -1rem;
+    margin-top: -6rem;
+    margin-bottom: 6rem;
+    font-size: 35px;
+    font-weight: bold;
+    color: #3985c7;
+}
+
+.infographic img{
+    width: 40%;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    float: right;
+    padding-left: 1rem;
+    padding-bottom: 15rem;
+}
+
+.infographic-undertekst h4{
+   font-size: 17px;
+   padding-left: 5rem;
+   line-height: 2rem;
+   padding-top: 1.5rem;
+}
+
+.infographic-opskrift h5{
+    font-size: 15px;
+    padding-left: 5rem;
+    padding: 5rem;
+    line-height: 2rem;
+}
+
+.boegle-insta svg{
+    margin-top: -11rem;
+    margin-bottom: -1rem
+}
+
+/*Instagram feed*/
+
+.instagram-tekst h6 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 4rem;
+    color: #5d78ad;
+    font-weight: bold;
+}
+
+.instagram-undertekst p{
+    font-size: 20px;
+    padding-left: 33rem;
+    
+}
+
+.instagram-undertekst p span{
+    color: #3985c7;
+}
+
+.coloumn img{
+    width: 30%;
+    float: left;
+    padding-left: 10rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/*Instagram feed end*/
+
+/*Bølge ved footer*/
+.boelgefooter svg{
+    margin-top: -6rem;
+    margin-bottom: -1rem;
+}
+/*Bølge ved footer slut*/
+
+/*Footer*/
+
+.footer {
+    padding: 40px 0;
+    background-color: #89a0cf;
+}
+
+.footer .social {
+text-align: center;
+padding-bottom: 25px;
+color: #fff;
+}
+
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover{
+    opacity: 0.9;
+    color: #3985c7;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding:  0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul a{
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+display: inline-block;
+padding: 0 15px;
+}
+
+.footer ul li a:hover{
+    opacity: 1;
+    color: #3985c7;
+}
+
+/*footer slut*/ 
+
+
+
+/*responsive*/
+
+@media (max-width: 426px){
+    body{ 
+        width: 100%;
+    }
+
+    header{
+        background-color:#f1f1f1;
+        display: grid;
+        align-items: center;
+    }
+
+    .navbar{
+        gap: 7rem;
+    }
+
+    .nav-branding{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navbar .logo img{
+        width: 320%;
+        margin-left: -4rem;
+    }
+
+    /*navbar slut*/
+
+
+    .forside-tekst h1{
+        font-size: 2rem;
+        margin-top: -4.5rem;
+        padding-right: 6rem;
+        margin-left: -2rem;
+        padding-bottom: 2rem;
+    }
+
+    .tedame img{
+        padding-top: 7rem;
+        margin-bottom: -1.5rem;
+    }
+
+    /*Identitetsafsnit*/
+
+    .nyidentitet h2{
+        font-size: 20px;
+    }
+
+    .knap a{
+        padding: 0.5rem;
+    }
+   
+    a {
+        font-size: 17px;
+    }
+
+  /*Infographic*/
+
+    .infographic-tekst h3 {
+        font-size: 25px;
+        margin-top: 0.5rem;
+    }
+
+    .infographic img{
+        width: 80%;
+        margin-right: -2rem; 
+        margin-top: -5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .infographic-undertekst h4{
+        font-size: 15px;
+        margin-left: -3rem; 
+        line-height: 1.5rem;
+        margin-right: 2rem;
+        
+
+    }
+
+    .infographic-opskrift h5{
+        font-size: 15px;
+        margin-left: -3rem;
+        line-height: 1.5rem;
+        padding-right: 1rem;
+    }
+
+    /*Stunder/instagram*/
+
+
+    .instagram-tekst h6{
+        font-size: 22px;
+    }
+
+    .instagram-undertekst p{
+        font-size: 17px;
+        padding-top: 0.5rem;
+        padding-bottom: 3rem;
+        padding-left: 3rem;
+        
+    }
+
+    .coloumn img {
+        width: 65%;
+        padding-left: 4.7rem;
+        padding-top: 0.5rem;
+    }
+
+  /*footer*/
+    .footer ul a{
+    font-size: 16px;
+     }
+
+
+}
+
+
+
+
+
+
+
+@media (min-width:821px){
+    
+    body{
+        width: 100%;
+    }
+
+  .empty{
+    display: none;
+  }
+
+  .navbar{
+    display: flex
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+
+  .navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    order: 1;
+  }
+
+  header{
+    height: 100px;
+  }
+
+  .nav-branding img{
+    width: 100px;
+  }
+  
+  .nav-menu {
+    display:flex;
+    align-items: center;
+    gap: 40px;
+    left: 0%;
+    flex-direction: row;
+    position: static;
+    order: 2;
+    width: auto;
+    font-size: 16px;
+  }
+
+  .nav-link:hover {
+    background-color:#acc0e3;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.navbar{
+    padding: 0 80px ;
+}
+
+.coloumn img{
+    width: 18%; 
+    }
+
+}
+
+
+
+
+
+
+@media (min-width:1024px){
+
+    body{
+        width: 100%;
+    }
+
+    .navbar{
+        padding: 0 80px ;
+    }
+}
+
+
+
+
+
+
+
+
+

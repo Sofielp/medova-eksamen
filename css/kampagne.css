@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Noticia Text', serif;
+}
+
+body{
+    background-color: #f7e8ec;
+}
+
+/*Navbar*/
+
+header {
+    background-color: #f1f1f1;
+    height: 100px;
+    display: grid;
+    align-items: stretch;
+}
+
+.logo img {
+    height: 70px;
+    padding-top: 4px;
+}
+
+.navbar {
+    min-height: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 3rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hamburger {
+    display: block;
+    order: 2;
+}
+
+.nav-branding {
+    order: 1;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    border-radius: 20px;
+}
+
+
+
+.nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 100px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-item {
+    margin: 16px 0;
+}
+
+.nav-menu.active {
+    left: 0;
+    width: 100%;
+}
+
+
+/*kampagne start*/
+
+
+
+h1 {
+    font-size: 3rem;
+    position: absolute;
+    padding-top: 8rem;
+    padding-left: 5rem;
+}
+
+h1 span {
+    color: #c96c98;
+   padding-left: 4.5rem;
+}
+
+
+.boelgeto svg{
+margin-top: -6rem;
+margin-bottom: -1rem;
+}
+
+
+.kampangeundertekst{
+    color: #c96c98;
+    padding-left: 5rem;
+    font-size: 35px;
+    margin-top: -4rem;
+}
+
+
+.kampagne-te img{
+width: 50rem;
+float: right;
+padding-top: 7rem;
+margin-right: 8rem;
+}
+
+
+.tebrevstekst {
+    padding-left: 5rem;
+    padding-bottom: 4rem;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.tebrevstekst p span{
+    color: #c96c98;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.tebrevene img{
+    width: 30%;
+    float: right;
+    margin-top: -25rem;
+}
+
+.boelgeto svg{
+    margin-bottom: -1rem;
+}
+
+
+/*kampagne slut*/
+
+/*Footer*/
+
+.footer {
+    padding: 40px 0;
+    background-color: #d39eb5;
+}
+
+.footer .social {
+text-align: center;
+padding-bottom: 25px;
+color: #fff;
+}
+
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover{
+    opacity: 0.9;
+    color: #c96c98;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding:  0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul a{
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+display: inline-block;
+padding: 0 15px;
+}
+
+.footer ul li a:hover{
+    opacity: 1;
+    color: #c96c98;
+}
+
+/*footer slut*/ 
+
+
+@media (max-width: 426px){
+    body{ 
+        width: 100%;
+    }
+
+    header{
+        background-color:#f1f1f1;
+        display: grid;
+        align-items: center;
+    }
+
+    .navbar{
+        gap: 7rem;
+    }
+
+    .nav-branding{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .navbar .logo img{
+        width: 320%;
+        margin-left: -4rem;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+/*navbar slut*/
+
+/*Overskrift og billede*/
+.kampagne-te h1{
+    font-size: 30px;
+    margin-top: -6rem;
+}
+
+.kampagne-te img{
+    width: 80%;
+    margin-right: 2.5rem;
+    padding-top: 9rem;
+    margin-bottom: -2rem;
+}
+
+/*Kampagne*/
+
+.kampangeundertekst h3{
+    padding-top: 2rem;
+    margin-left: -2rem;
+    font-size: 26px;
+}
+
+.tebrevstekst p{
+    font-size: 15px;
+    padding-right: 3rem;
+    margin-left: -2rem;
+}
+    
+.tebrevstekst p span{
+    font-size: 22px;
+}
+
+
+.tebrevene img{
+    padding-top: 21rem;
+    width: 60%;
+    padding-bottom: 4rem;
+    padding-right: 6rem;
+}
+
+/*footer*/
+.footer ul a{
+font-size: 16px;
+}
+
+
+}
+
+@media (min-width:821px){
+    
+    body{
+        width: 100%;
+    }
+
+  .empty{
+    display: none;
+  }
+
+  .navbar{
+    display: flex
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+
+  .navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    order: 1;
+  }
+
+  header{
+    height: 100px;
+  }
+
+  .nav-branding img{
+    width: 100px;
+  }
+  
+  .nav-menu {
+    display:flex;
+    align-items: center;
+    gap: 40px;
+    left: 0%;
+    flex-direction: row;
+    position: static;
+    order: 2;
+    width: auto;
+    font-size: 16px;
+  }
+
+  .nav-link:hover {
+    background-color:#c96c98;
+   
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.navbar{
+    padding: 0 80px ;
+}
+}
+
+@media (min-width:1024px){
+
+    body{
+        width: 100%;
+    }
+
+    .navbar{
+        padding: 0 80px ;
+    }
+}
+
+
+@media (min-width:1920px) {
+
+    body{
+        width: 1920px;
+    }
+}
+
+@media (max-width: 991px){
+    footer{
+        padding: 40px;
+    }
+}
+
+/*Footer slut*/
